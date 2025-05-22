@@ -78,3 +78,76 @@ header {
   font-style: italic;
   background: #eaeaea;
 }
+
+/* Timeline Section */
+.timeline-page {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: #fef9f5;
+  border: 2px solid #e6d9cc;
+  border-radius: 16px;
+  box-shadow: 0 0 15px rgba(170, 144, 200, 0.2);
+  font-family: 'Georgia', serif;
+}
+
+.timeline-header {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #5d4660;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-left: 20px;
+  border-left: 4px solid #a991c2; /* timeline line */
+  padding-left: 20px;
+}
+
+.event-card {
+  position: relative;
+  background-color: #ffffff;
+  border: 1px solid #d3c2e3;
+  border-radius: 12px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 8px rgba(170, 144, 200, 0.1);
+}
+
+.event-card::before {
+  content: "";
+  position: absolute;
+  top: 1.2rem;
+  left: -32px;
+  width: 20px;
+  height: 20px;
+  background-color: #a991c2;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px #a991c2;
+}
+
+.event-time {
+  font-size: 1rem;
+  color: #6c5b7b;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.event-name {
+  font-size: 1.4rem;
+  color: #3e2b47;
+  font-weight: 600;
+}
+
+/* Secret event hidden unless type=c is passed */
+.secret-event {
+  display: none;
+  border: 2px dashed #b49fcf;
+  background-color: #faf5ff;
+}
