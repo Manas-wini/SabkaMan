@@ -1,0 +1,80 @@
+body {
+  font-family: 'Georgia', serif;
+  margin: 0;
+  background-color: #fef9f4;
+  color: #333;
+}
+
+header {
+  background: #d9c8eb;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 100px;
+  margin-bottom: 1rem;
+}
+
+.fancy-names {
+  font-size: 3rem;
+  color: #5a3b8c;
+  font-family: 'Brush Script MT', cursive;
+  margin: 0.5rem 0;
+}
+
+.tagline {
+  font-style: italic;
+  margin: 0.5rem 0;
+}
+
+.wedding-date {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2e7d66;
+  margin: 1rem 0;
+}
+
+.countdown {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 2rem 0;
+  color: #c0392b;
+}
+
+.welcome {
+  text-align: center;
+  padding: 2rem;
+  background-color: #f8f2ff;
+}
+
+.preview-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.preview-card {
+  background-color: #ffffff;
+  border: 2px solid #e0d1ec;
+  border-radius: 12px;
+  padding: 1rem;
+  margin: 1rem;
+  width: 200px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.preview-card:hover {
+  transform: scale(1.05);
+  background-color: #f3edff;
+}
+
+.signoff {
+  text-align: center;
+  padding: 2rem;
+  font-style: italic;
+  background: #eaeaea;
+}
