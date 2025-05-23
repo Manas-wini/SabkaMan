@@ -1,20 +1,17 @@
-const countdown = () => {
-  const eventDate = new Date("December 25, 2025 00:00:00").getTime();
-  const now = new Date().getTime();
-  const gap = eventDate - now;
+const weddingDate = new Date("2025-07-06T00:00:00");
+const countdownEl = document.getElementById("countdown-days");
 
-  const second = 1000;
-  const minute = second * 60;
-  const hour = minute * 60;
-  const day = hour * 24;
+function updateCountdown() {
+  const now = new Date();
+  const diff = weddingDate - now;
 
-  const d = Math.floor(gap / day);
-  const h = Math.floor((gap % day) / hour);
-  const m = Math.floor((gap % hour) / minute);
-  const s = Math.floor((gap % minute) / second);
+  if (diff > 0) {
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    countdownEl.innerText = `${days} Days To Go!`;
+  } else {
+    countdownEl.innerText = "It's Wedding Day!! 🎉";
+  }
+}
 
-  document.getElementById("countdown").innerText =
-    `${d} days ${h} hrs ${m} min ${s} sec`;
-};
-
-setInterval(countdown, 1000);
+updateCountdown();
+setInterval(updateCountdown, 86400000); // update daily
