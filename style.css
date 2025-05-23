@@ -1,114 +1,69 @@
+/* 🌿 General Styles */
 body {
-  font-family: 'Georgia', serif;
   margin: 0;
-  background-color: #fef9f4;
-  color: #333;
+  font-family: 'IM Fell DW Pica', serif;
+  background-color: #2b192e;
+  color: #f5e8da;
 }
 
-header {
-  background: #2b192e;
-  padding: 2rem;
+/* 🌸 Header */
+.main-header {
+  background-color: #f5e8da;
+  color: #2b192e;
   text-align: center;
+  padding: 1.5rem 1rem;
 }
 
-.logo {
-  height: 100px;
-  margin-bottom: 1rem;
-}
-
-.fancy-names {
+.main-header h1 {
+  font-family: 'Ovo', serif;
   font-size: 3rem;
-  color: #5a3b8c;
-  font-family: 'Brush Script MT', cursive;
-  margin: 0.5rem 0;
+  margin: 0;
 }
 
-.tagline {
-  font-style: italic;
-  margin: 0.5rem 0;
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
 }
 
-.wedding-date {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #2e7d66;
+.floral {
+  width: 40px;
+  height: auto;
+}
+
+/* 💌 Section 1: Welcome */
+.welcome {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 5%;
+  background-color: #2b192e;
+  flex-wrap: wrap;
+}
+
+.welcome-text {
+  max-width: 50%;
+  font-size: 1.3rem;
+}
+
+.welcome-text p {
   margin: 1rem 0;
 }
 
-.countdown {
+.divider {
   font-size: 2rem;
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+.date-place {
+  font-size: 1.7rem;
   font-weight: bold;
-  margin: 2rem 0;
-  color: #c0392b;
 }
 
-.welcome {
-  text-align: center;
-  padding: 2rem;
-  background-color: #f8f2ff;
-}
-
-.preview-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 2rem;
-}
-
-.preview-card {
-  background-color: #ffffff;
-  border: 2px solid #e0d1ec;
-  border-radius: 12px;
-  padding: 1rem;
-  margin: 1rem;
-  width: 200px;
-  text-align: center;
-  cursor: pointer;
-  transition: transform 0.2s ease;
-}
-
-.preview-card:hover {
-  transform: scale(1.05);
-  background-color: #f3edff;
-}
-
-.signoff {
-  text-align: center;
-  padding: 2rem;
-  font-style: italic;
-  background: #eaeaea;
-}
-
-.banner-img {
+.welcome-photo img {
   width: 100%;
-  height: auto;
+  max-width: 400px;
   border-radius: 20px;
-  margin: 20px 0;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.couple-banner {
-  text-align: center;
-}
-
-.tagline {
-  font-family: "Georgia", serif;
-  font-size: 1.2rem;
-  color: #5e4b8b;
-  margin-top: 5px;
-}
-
-.couple-names {
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: #3d3d3d;
-  margin-bottom: 10px;
-}
-
-.countdown {
-  margin: 20px 0;
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: #5e4b8b;
-  text-align: center;
 }
